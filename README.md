@@ -47,6 +47,13 @@ GitHub Actions allows you to build your app on macOS, Windows and Linux without 
              # release the app after building
              release: ${{ startsWith(github.ref, 'refs/tags/v') }}
    ```
+   Activate on new tag created
+   ```
+   on:
+     push:
+       tags:
+         - '*'
+   ```
 
 ## Usage
 
